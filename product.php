@@ -33,7 +33,7 @@
 	}
 	else
 	{
-		$productName = $getStock = Tools::getRow('product', 'id_product = '.(int)$product.'', 'name');
+		$productName  = Tools::getRow('product', 'id_product = '.(int)$product.'', 'name');
 		$page->createPage('product', $productName);
 	}
 ?>
